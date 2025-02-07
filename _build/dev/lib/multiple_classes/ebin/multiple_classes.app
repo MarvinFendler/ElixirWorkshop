@@ -1,0 +1,11 @@
+{application,multiple_classes,
+             [{modules,['Elixir.BasicSyntax','Elixir.BasicSyntax.Person',
+                        'Elixir.InteractiveExercise.ExerciseEasy.SimpleCalculator',
+                        'Elixir.InteractiveExercise.ExerciseHard.ContactManager',
+                        'Elixir.InteractiveExercise.ExerciseMedium.NumberGame',
+                        'Elixir.TodoCli.Cli','Elixir.TodoCli.Todo']},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"multiple_classes"},
+              {registered,[]},
+              {vsn,"0.1.0"}]}.

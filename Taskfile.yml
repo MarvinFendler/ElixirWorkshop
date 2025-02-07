@@ -1,0 +1,37 @@
+version: 3
+silent: false
+tasks:
+  up:
+    desc: "Starts Docker Compose"
+    cmds:
+      - docker compose up -d
+  down:
+    desc: "Stops Docker Compose"
+    cmds:
+      - docker compose down
+  check-simple-calculator:
+    desc: "run the tests of the simple calculator"
+    cmds:
+      - docker exec elixirworkshop-elixir-1 mix test test/InteractiveExercise/ExerciseEasy/simple_calculator_test.exs
+  check-number-game:
+    desc: "run the tests of the number"
+    cmds:
+      - docker exec elixirworkshop-elixir-1 mix test test/InteractiveExercise/ExerciseMedium/number_game_test.exs
+  check-contact_manager:
+    desc: "run the tests of the contact manager"
+    cmds:
+      - docker exec elixirworkshop-elixir-1 mix test test/InteractiveExercise/ExerciseHard/contact_manager_test.exs
+  check-all:
+    desc: "check all test"
+    cmds:
+      - task: check-simple-calculator
+      - task: check-number-game
+      - task: check-contact_manager
+  run-basic-syntax:
+    desc: "run the file named basic_syntax.ex"
+    cmds:
+      - docker exec elixirworkshop-elixir-1 elixir lib/basic_syntax.ex
+  run-todo-cli:
+    desc: "run the application declared in the todo_cli folder"
+    cmds:
+      - docker exec -it elixirworkshop-elixir-1 mix run -e TodoCli.Cli.start

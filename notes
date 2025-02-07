@@ -1,0 +1,25 @@
+File Aufbau
+\_build - contains compilation artifacts
+lib - contains Elixir code (usually .ex files)
+test - contains tests
+
+iex -S mix
+
+Vorbereitung
+-> Editor den ich dafür nutze ist VSC, da IntejjiJ dies nich unterstützt, wegen syntax highlighting/server language
+-> wenn vsc dann solltet ihr als Plugin Folgendes installiert haben: ElixirLS: Elixir support und debugger
+
+Folien----
+Was ist Elexir?
+Wie verbreitet ist diese Sprache?
+-> Einstreuen das Dc diese Sprache mitunter nutzen
+Funktionale Programmierung
+Statelessness - Zustandlosigkeit in bezug dazu
+ist ein multi-paradigm: functional, process oriented
+
+Danach Projekt/ Repo bei allen einrichten sodass Elixir/Mix/Docker und so auf allen Maschinen läuft
+Docker Container Vorbereiten
+
+wichtig um die programme auszuführen
+-> ins verzeichnis und dann "elixir Filename" um die Datei auszuführen
+-> iex -S mix und dann im neuen Terminal den kompletten dateipfad samt function und parametern selber ausführen
