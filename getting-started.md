@@ -1,5 +1,4 @@
 1 # integer
-0x1F # integer
 1.0 # float
 true # boolean
 :atom # atom / symbol
