@@ -17,7 +17,7 @@ tasks:
     desc: "run the tests of the number"
     cmds:
       - docker exec elixirworkshop-elixir-1 mix test test/InteractiveExercise/ExerciseMedium/number_game_test.exs
-  check-contact_manager:
+  check-contact-manager:
     desc: "run the tests of the contact manager"
     cmds:
       - docker exec elixirworkshop-elixir-1 mix test test/InteractiveExercise/ExerciseHard/contact_manager_test.exs
